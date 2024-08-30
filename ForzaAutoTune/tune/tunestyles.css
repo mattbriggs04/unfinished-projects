@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #222222;
+}
+nav {
+    background-color: #222222;
+}
+#current-page {
+    color: red;
+}
+#current-page:hover  {
+    text-shadow: 0px 0px 5px red;
+}
+nav ul {
+    width: 90%;
+    margin: 0 auto;
+    height: 8vh;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav li {
+    flex: 1;
+    text-align: right;
+}
+nav a {
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+    font-family: "Nanum Gothic", serif;
+    font-size: 90%;
+}
+nav a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(96, 223, 255);
+}
+nav .logo {
+    flex: 2;
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+}
+nav .logo a {
+    font-family: "Press Start 2P", sans-serif;
+    text-shadow: 0px 5px 2px black;
+}
+.header {
+    height: 15vh;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-family: display;
+    color: white;
+    overflow: hidden;
+}
+
+
+.content-car-type {
+    background: rgb(223, 223, 223);
+    height: 60vh;
+}
+.content-car-type h2 {
+    --height-car-type: 5vh;
+    height: var(--height-car-type);
+    padding-top: calc(var(--height-car-type)/2); /* centers */
+    text-align: center;
+    font-family: 'Share';
+}
+.radio-btns {
+    font-family: "Fredericka the Great", sans-serif;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.radio-btns label {
+    user-select: none;
+}
+.radio-btns input[type=radio] {
+    display: none;
+}
+.race-btn,
+.drag-btn,
+.drift-btn,
+.rally-btn {
+    color: black;
+    display: flex;
+    justify-content: center;
+
+    font-size: 2.5rem;
+    background-color: rgb(143, 143, 143);
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px 0 black;
+
+    height: 40vh;
+    width: 20vw;
+    overflow: hidden;
+}
+.radio-btns label:hover {
+    cursor: pointer;
+}
+.race-btn:hover,
+.drag-btn:hover,
+.drift-btn:hover,
+.rally-btn:hover {
+    box-shadow: 0px 0px 10px black;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.race-btn {
+    /* Photo by <a href="https://unsplash.com/@toddjiang?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Todd Jiang</a> on <a href="https://unsplash.com/s/photos/racing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    background-image: url("../images/image3_race.jpg");
+    background-size: cover;
+
+    padding-top: 5vh;
+    text-shadow: 0px 0px 5px rgb(90, 194, 171);
+
+}
+.drag-btn {
+    /* Photo by <a href="https://unsplash.com/@mjsleeper?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matthew Sleeper</a> on <a href="https://unsplash.com/s/photos/drag-racing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    background-image: url("../images/image2_drag.jpg");
+    background-size: cover;
+
+    padding-top: 5vh;
+    text-shadow: 0px 0px 5px rgb(253, 176, 76);
+}
+.drift-btn {
+    /* Photo by <a href="https://unsplash.com/@s_midili?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">serjan midili</a> on <a href="https://unsplash.com/s/photos/drift?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    background-image: url("../images/image4_drift.jpg");
+    background-size: cover;
+
+    padding-top: 5vh;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.rally-btn {
+    /* Photo by <a href="https://unsplash.com/@wolair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dima Khudorozhkov</a> on <a href="https://unsplash.com/s/photos/rally?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    background-image: url("../images/image5_rally.jpg");
+    background-size: cover;
+
+    padding-top: 5vh;
+    text-shadow: 0px 0px 5px rgb(25, 170, 25);
+}
+
+.buffer {
+    height: 17vh;
+}
+
+.content-front-percent {
+    background: rgb(223, 223, 223);
+    height: 90vh;
+    padding-bottom: 10vh;
+}
+.content-front-percent h2 {
+    height: 5vh;
+    padding-top: calc(5vh/2);
+    text-align: center;
+    font-family: 'Share';
+}
+.card-container {
+    font-family: 'Nanum Gothic';
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card-container .card-one,
+.card-container .card-two {
+    flex: 1;
+    padding: 2rem;
+    max-height: vh;
+    overflow: hidden;
+}
+.card-container .card-one {
+    font-size: 1.5rem;
+}
+.card-container .card-two {
+    height: 90%;
+    margin: 0 auto;
+}
+.card-container .card-two img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    border: 2px solid rgb(92, 92, 92);
+    box-shadow: 0px 0px 10px black;
+}
+.card-one input[type=number] {
+    width: 80%;
+    height: 10vh;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 3rem;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Share';
+}
+input[type=number]:focus {
+    outline: none;
+}
+
+.content-min-max {
+    background: rgb(223, 223, 223);
+    min-height: 170vh;
+    max-height: 400vh;
+    font-family: 'Nanum Gothic';
+}
+.content-min-max h2{
+    height: 10vh;
+    padding-top: calc(5vh/2);
+    text-align: center;
+    font-family: 'Share';
+}
+.content-min-max > p {
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    height: 5vh;
+    font-size: 1.5rem;
+}
+.content-min-max img {
+    height: 60vh;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgb(92, 92, 92);
+    box-shadow: 0px 0px 5px black;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+.min-max-inputs input[type=number] {
+    width: 41%;
+    height: 10vh;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 3rem;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Share';
+}
+.min-max-inputs p {
+    font-size: 2rem;
+    text-align: center;
+    height: 3vh;
+}
+
+.content-submit {
+    height: 20vh;
+    margin-top: 0vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.content-submit button {
+    border: none; /* determined by JS */
+    background: none;
+    font-family: 'Fredericka The Great';
+    border-radius: 10px;
+    font-size: 3rem;
+    padding: 1rem;
+    /* color: red;
+    box-shadow: 0px 0px 10px red,
+                inset 0px 0px 10px red; */
+    color: rgb(28, 179, 28);
+    box-shadow: 0px 0px 10px rgb(21, 173, 21), inset 0px 0px 10px rgb(21, 173, 21);
+}
+.content-submit button:hover {
+    cursor: pointer;
+    filter: brightness(150%);
+}
+
+.content-results {
+    min-height: 0;
+    max-height: 99999vh;
+    background-color: rgb(223, 223, 223);
+    font-family: 'Share', sans-serif;
+}
+
+.results-aero,
+.results-damping,
+.results-bump,
+.results-springs,
+.results-antiroll-bars {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    height: calc(var(--result-height)/5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}

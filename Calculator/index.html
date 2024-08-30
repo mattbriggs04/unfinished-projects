@@ -1,0 +1,40 @@
+<!--author: matt briggs-->
+<!--the project and some html + css content and ideas were inspired (not plagiarized in any way, this project was done by the author authentically and originally) by 'web dev simplified' on youtube (check his JavaScript Calculator tutorial) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- calc shell -->
+    <div class="calculator">
+        <div class="output">
+            <div id="current-operand"></div>
+        </div>
+        <button class="special all-clear" onclick="allClear()">AC</button> <!-- all clear - clears all values selected operator etc -->
+        <button class="special negative" onclick="negative()">+/-</button> <!-- swaps sign (multiplies by -1) -->
+        <button class="special percent" onclick="percent()">%</button> <!-- changes to percent e.g. 1 % = 0.01 -->
+        <button class="operator" id="divide" onclick="setOperator('/')">÷</button>
+        <button class="number number1" onclick="input('1')" >1</button>
+        <button class="number number2" onclick="input('2')">2</button>
+        <button class="number number3" onclick="input('3')">3</button>
+        <button class="operator" id="multiply" onclick="setOperator('*')">x</button>
+        <button class="number number4" onclick="input('4')">4</button>
+        <button class="number number5" onclick="input('5')">5</button>
+        <button class="number number6" onclick="input('6')">6</button>
+        <button class="operator" id="subtract" onclick="setOperator('-')">-</button>
+        <button class="number number7" onclick="input('7')">7</button>
+        <button class="number number8" onclick="input('8')">8</button>
+        <button class="number number9" onclick="input('9')">9</button>
+        <button class="operator" id="add" onclick="setOperator('+')">+</button>
+        <button class="number number0 span-two" onclick="input(0)">0</button>
+        <button class="number decimal" onclick="input('.')">.</button>
+        <button class="operator equals" onclick="calculate()">=</button>
+    </div>
+</body>
+</html>

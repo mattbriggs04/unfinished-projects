@@ -1,0 +1,70 @@
+/* font: Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+/* font: Fira Sans */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500&display=swap');
+/* font: Shippori Antique */
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+:root {
+    --fg-clr: hsl(0, 0%, 10%);
+}
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    background: var(--fg-clr);
+}
+nav a {
+    color: white;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 350ms ease-in-out;
+}
+nav a:hover {
+    background: black;
+    text-shadow: 0px 0px 15px white;
+}
+nav ul {
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.sub-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+nav li:hover .sub-menu > li {
+    display: block;
+    top: 0px;
+}
+.sub-menu li {
+    display: none;
+    background-color: var(--fg-clr);
+}
+nav .logo {
+    margin-right: 15vw;
+}
+nav .logo:hover {
+    background: none;
+    text-shadow: none;
+    transform: rotate(15deg);
+}
+.domain {
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    padding: 2px;
+}

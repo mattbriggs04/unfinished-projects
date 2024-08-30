@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tunestyles.css" />
+    <script src="tunescript.js" defer></script>
+    <title>Forza Auto Tuner - Tune</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><a href="../index/index.html">LOGO</a></li>
+            <li><a href="#" id="current-page">Tune</a></li>
+            <li><a href="#">Suggest</a></li>
+             <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        <h1>Make your Tune</h1>
+        <p>Follow the directions below. Make sure you are in the tune menu of the game.</p>
+    </div>
+    <div class="content-car-type">
+        <h2>Step 1: Pick an end focus for your tune</h2>
+        <div class="radio-btns">
+            <div class="race-btn" id="race-btn">
+                <input type="radio" id="race" value="race" name="car_type">
+                <label for="race">RACE</label>
+            </div>
+            <div class="drag-btn" id="drag-btn">
+                <input type="radio" id="drag" value ="drag" name="car_type">
+                <label for="drag">DRAG</label>
+            </div>
+            <div class="drift-btn" id="drift-btn">
+                <input type="radio" id="drift" value="drift" name="car_type">
+                <label for="drift">DRIFT</label>
+            </div>
+            <div class="rally-btn" id="rally-btn">
+                <input type="radio" id="rally" value="rally" name="car_type">
+                <label for="rally">RALLY</label>
+            </div>
+        </div>
+    </div>
+    <div class="buffer">
+    </div>
+    <div class="content-front-percent">
+        <h2>Step 2: Find your front weight %</h2>
+        <div class="card-container">
+            <div class="card-one">
+                <p>You can find your front weight % by going to the festival, going to 'Upgrades &amp; Tuning' then 'Custom Upgrade.' <br /> From there, click on any upgrade, and then on your controller press up on the d-pad until a screen similar to the image on the right appears </p>
+                <input type="number" id="frontPercent" min="0" max="1" placeholder="front% (/100)" step="0.01">
+            </div>
+            <div class="card-two">
+                <img src="../images/image7_front.png" />
+            </div>
+        </div>
+    </div>
+    <div class="buffer">
+    </div>
+    <div class="content-min-max">
+        <h2>Step 3: Enter your min-max values</h2>
+        <p>There are three different min-max values that you'll have to manually input to ensure your results are perfect: Damping, Spring, and Antiroll Bars. In the image below, the min is 3 and max 20.</p>
+        <img src="../images/image6_max_min.png" />
+        <div class="min-max-inputs">
+            <p>Damping</p>
+            <input type="number" id="min-damping" placeholder="min">
+            <input type="number" id="max-damping" placeholder="max">
+            <p>Springs</p>
+            <input type="number" id="min-springs" placeholder="min">
+            <input type="number" id="max-springs" placeholder="max">
+            <p>AntiRoll Bars</p>
+            <input type="number" id="min-antiroll-bars"placeholder="min">
+            <input type="number" id="max-antiroll-bars" placeholder="max">
+        </div>
+    </div>
+    
+    <div class="content-submit">
+        <button id="submit-btn">Get Results</button>
+    </div>
+
+    <div class="content-results">
+        <div class="results-aero">
+            <div class="results-left">
+                <h1>Aero</h1>
+            </div>
+            <div class="results-right">
+                <h2>Front: <span id="f-aero"></span> </h2>
+                <h2>Rear: <span id="r-aero"></span> </h2>
+            </div>
+        </div>
+        <div class="results-damping">
+            <div class="results-left">
+                <h1>Damping</h1>
+            </div>
+            <div class="results-right">
+                <h2>Front: <span id="f-damping"></span> </h2>
+                <h2>Rear: <span id="r-damping"></span> </h2>
+            </div>
+        </div>
+        <div class="results-bump">
+            <div class="results-left">
+                <h1>Bump Stiffness</h1>
+            </div>
+            <div class="results-right">
+                <h2>Front: <span id="f-bump"></span></h2>
+                <h2>Rear: <span id="r-bump"></span></h2>
+            </div>
+        </div>
+        <div class="results-springs">
+            <div class="results-left">
+                <h1>Springs</h1>
+            </div>
+            <div class="results-right">
+                <h2>Front: <span id="f-springs"></span> </h2>
+                <h2>Rear: <span id="r-springs"></span> </h2>
+            </div>
+        </div>
+        <div class="results-antiroll-bars">
+            <div class="results-left">
+                <h1>Antiroll-bars</h1>
+            </div>
+            <div class="results-right">
+                <h2>Front: <span id="f-antiroll-bars"></span> </h2>
+                <h2>Rear: <span id="r-antiroll-bars"></span> </h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

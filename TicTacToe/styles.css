@@ -1,0 +1,36 @@
+body {
+    background-image: linear-gradient(to top, rgb(134, 43, 134), rgb(79, 79, 212), rgb(77, 176, 201))
+}
+.grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 5px white;
+}
+.grid button {
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border: 0.5px solid black;
+}
+.grid button:hover {
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+.centered {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#winner {
+    position: absolute;
+    text-shadow: 0px 0px 10px white;
+    background-color: rgba(0, 0, 0, 0.329);
+    padding: 10px;
+    color: white;
+    display: none;
+}

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --p-lrg: 1.05rem;
+    --p-sml: 0.9rem;
+    --link-clr: #00087e;
+}
+.header-img {
+    z-index: -1;
+    position: relative;
+    height: 50vh;
+    background-image: url(../../images/turbo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.header-img p a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -4vh;
+    background-color: white;
+    border-radius: 3px;
+    padding: 2rem;
+    min-height: 5vh;
+    max-height: fit-content;
+    font-size: 1.3rem;
+    font-family: 'Shippori Antique', Helvetica, sans-serif;
+}
+.main-content {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    color:rgb(27, 27, 27);
+    width: 75%;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+.main-content p {
+    font-size: var(--p-lrg);
+}
+.main-content h3 {
+    font-size: 1.7rem;
+}
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 1rem;
+    }
+    .main-content {
+        line-height: 1.5rem;
+    }
+    .main-content p {
+        font-size: var(--p-sml);
+    }
+    .main-content h3 {
+        font-size: 1.4rem;
+    }
+}
+.main-content .par-two {
+    margin-top: 2vh;
+}
+.main-content .first-word {
+    margin-left: 2rem;
+}
+.main-content .keyword {
+    font-weight: 500;
+}
+.main-content blockquote {
+    font-style: italic;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.3em;
+    font-family: "Georgia", serif;
+}
+.main-content p a {
+    text-decoration: none;
+    color: var(--link-clr);
+    transition: all 100ms linear;
+}
+.main-content p a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.main-content .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+}
+.main-content .image img {
+    height: 50vh;
+}
+.footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.8rem;
+    background-color: hsl(0, 0%, 10%);
+    margin-top: 5vh;
+    padding: 0.3rem;
+    height: fit-content;
+}
+.footer p {
+    padding: 5px;
+}
+.footer span {
+    font-weight: bold;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 1px;
+}
+.footer .sources a {
+    color: rgb(144, 180, 192);
+    display: block;
+    text-align: center;
+    margin: 0.4rem;
+}
+.footer .sources a:hover {
+    color: rgb(191, 239, 255);
+}
+

@@ -1,0 +1,121 @@
+
+/* Define variables in :root pseudo-class */
+:root {
+    --bg-clr: hsl(0, 0%, 10%);
+    --clr-white: white;
+    --clr-gray: hsl(0, 0%, 76%);
+    --clr-mongoose: #b19b72;
+}
+body {
+    background: rgb(255, 255, 255);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center-content {
+    z-index: -1; 
+    position: relative;
+    /* Photo by <a href="https://unsplash.com/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik Mclean</a> on <a href="https://unsplash.com/s/photos/car-hood-open?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    /* background-image: url('images/erik-mclean-ioEjMWHn2nY-unsplash.jpg'); */
+    /* Photo by <a href="https://unsplash.com/@peterbroomfield?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Broomfield</a> on <a href="https://unsplash.com/s/photos/cars?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    background-image: url('../images/peter-broomfield-m3m-lnR90uM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+.center-content .header {
+    margin-top: 15vh;
+    margin-left: 20vw;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.center-content .header h1 {
+    border-bottom: 3px solid white;
+    width: fit-content;
+    margin-bottom: 5vh;
+    text-shadow: -1px 3px 5px rgba(255, 255, 255, 0.5);
+}
+.center-content .header p {
+    line-height: 2.5rem;
+}
+.header .daily-topic {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border: 2px solid white;
+    width: 80%;
+    margin: 0 auto;
+    padding: .3rem;
+}
+/* .photo-credits {
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 90%);
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    text-align: center;
+}
+.photo-credits a {
+    text-decoration: none;
+    color: hsl(0, 0%, 90%);
+} */
+.grid {
+    display: grid;
+}
+.explore-topics { 
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3vh;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.col-span-two {
+    grid-column: span 2;
+}
+.card {
+    background: hsl(0, 0%, 10%); /* takes in case a card hasn't been given a background */
+    position: relative;
+    padding: 2em;
+}
+.soon {
+    color: white;
+}
+.aspiration {
+    color: var(--clr-mongoose);
+    background: black;
+}
+.aspiration a {
+    font-family:'Rubik', Courier, monospace;
+    color: var(--clr-mongoose);
+    text-decoration: none;
+}
+.aspiration a:hover {
+    text-decoration: underline;
+}
+.aspiration p {
+    margin: 1.7em 0;
+    font-size: 1.4rem;
+}
+.aspiration .bg-logo {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-size: 5rem;
+    color:hsla(0, 0%, 78%, 0.26);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.configuration {
+    background: var(--clr-gray);
+}
